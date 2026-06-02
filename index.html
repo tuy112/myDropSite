@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>덕아웃 - 베타</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+
+    <!-- 페이지 1: 메인 문제 화면 -->
+    <div id="page-question" class="page active fade-in">
+    
+    <div class="header">
+        <div class="header-title">DUGOUT · 덕아웃 선택 #1</div>
+        <div class="header-main">2024.8.17 광주 · 7회초</div>
+    </div>
+    
+    <!-- 스코어보드 + 다이아몬드 -->
+    <div class="section">
+        <div class="scoreboard">
+        <div class="score-box">
+            <div class="score-row away">
+            <span class="team-name">두산</span>
+            <span class="team-score">4</span>
+            </div>
+            <div class="score-row home">
+            <span class="team-name">KIA</span>
+            <span class="team-score">3</span>
+            </div>
+            <div class="inning-info">7회초 ▲</div>
+        </div>
+        <div class="diamond-container">
+            <div class="diamond"></div>
+            <div class="base second runner"></div>
+            <div class="base third"></div>
+            <div class="base first runner"></div>
+            <div class="base home"></div>
+        </div>
+        </div>
+        <div class="outs">
+        <span class="out-circles">
+            <span class="out-circle on"></span>
+            <span class="out-circle"></span>
+            <span class="out-circle"></span>
+        </span>
+        1사 · 1·2루
+        </div>
+        <div style="height:14px"></div>
+    </div>
+    
+    <!-- 호출 -->
+    <div class="question-prompt">
+        <div class="question-team">🔵 기아 덕아웃!</div>
+        <div class="question-situation">1사 1·2루 위기입니다</div>
+        <div class="question-main">코칭스태프!<br>어떤 결정을 하실껀가요?</div>
+    </div>
+    
+    <!-- 두산 공격 -->
+    <div class="section">
+        <div class="section-header away">🔴 두산 공격</div>
+        
+        <div class="batter-card">
+        <div class="batter-title">
+            🎯 라모스 (우타)
+            <span class="badge">4번 · 3타석째</span>
+        </div>
+        <div class="today-record">오늘: 플라이 → 안타 → ?</div>
+        <div class="stat-row">시즌 <strong>.295</strong> · vs좌 <strong>.267</strong> · vs우 <strong>.312</strong></div>
+        <div class="stat-row">1·2루 <strong>.322</strong> · 만루 <strong>.375</strong></div>
+        </div>
+        
+        <div class="lineup">
+        <div class="lineup-title">두산 타순 · 대타</div>
+        
+        <div class="player-row">
+            <div class="player-num">5</div>
+            <div class="player-info">
+            <div class="name">김재환 (좌타)</div>
+            <div class="stats">.283 · vs좌 .241 · vs우 .295 · 만루 .312</div>
+            </div>
+        </div>
+        
+        <div class="player-row">
+            <div class="player-num">6</div>
+            <div class="player-info">
+            <div class="name">양의지 (우타)</div>
+            <div class="stats">.276 · vs좌 .291 · vs우 .268 · 만루 .345</div>
+            </div>
+        </div>
+        
+        <div class="player-row">
+            <div class="player-num pinch">PH</div>
+            <div class="player-info">
+            <div class="name">헨리 (우타) <span class="warn">⚠</span></div>
+            <div class="stats">대타 .310 · 만루 <strong style="color:#dc2626">.400</strong></div>
+            </div>
+        </div>
+        
+        <div class="player-row">
+            <div class="player-num pinch">PH</div>
+            <div class="player-info">
+            <div class="name">안재석 (좌타)</div>
+            <div class="stats">대타 .268 · 만루 .310</div>
+            </div>
+        </div>
+        
+        <div class="player-row">
+            <div class="player-num pinch">PH</div>
+            <div class="player-info">
+            <div class="name">김재호 (우타)</div>
+            <div class="stats">대타 .258 · 만루 .290</div>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <!-- KIA 수비 -->
+    <div class="section">
+        <div class="section-header home">🔵 KIA 수비</div>
+        
+        <div class="pitcher-card">
+        <div class="pitcher-name">🎯 이준영 (좌완)</div>
+        <div class="pitcher-status">6회 1사 등판, 12구<br>플라이(김재환,좌) → 안타(양석환,우) → 볼넷(강승호,우) <span class="warn">⚠ 흔들림</span></div>
+        <div class="stat-row">ERA <strong>3.42</strong> · 12홀드 · vs좌 <strong>.198</strong> · vs우 <strong>.278</strong></div>
+        <div class="stat-row">1·2루 <strong>.295</strong> · 만루 <strong>.312</strong></div>
+        </div>
+        
+        <div class="lineup">
+        <div class="lineup-title">KIA 투수진 (상대 타자 vs 전적)</div>
+        <table class="bullpen-table">
+            <thead>
+            <tr>
+                <th>투수</th>
+                <th>라모스</th>
+                <th>김재환</th>
+                <th>양의지</th>
+                <th>헨리</th>
+                <th>만루ERA</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="current">
+                <td>이준영(좌)</td>
+                <td>.333</td>
+                <td>.250</td>
+                <td>.312</td>
+                <td>.333</td>
+                <td>3.12</td>
+            </tr>
+            <tr>
+                <td>최지민(좌)</td>
+                <td>.333</td>
+                <td class="star">.143⭐</td>
+                <td>.267</td>
+                <td>.500</td>
+                <td>2.84</td>
+            </tr>
+            <tr>
+                <td>전상현(우)</td>
+                <td class="warn">.375</td>
+                <td class="warn">.400</td>
+                <td>.289</td>
+                <td>.500</td>
+                <td class="warn">4.12</td>
+            </tr>
+            <tr>
+                <td>곽도규(우)</td>
+                <td class="warn">.500</td>
+                <td>.333</td>
+                <td>.250</td>
+                <td>.333</td>
+                <td>3.45</td>
+            </tr>
+            <tr>
+                <td>정해영(우)</td>
+                <td>.300</td>
+                <td>.250</td>
+                <td>.200</td>
+                <td>.200</td>
+                <td>2.10</td>
+            </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+    
+    <!-- 선택지 -->
+    <div class="choices" id="choices-section">
+        <button class="choice-btn" onclick="showSubChoice('A')">
+        <span class="choice-label">A</span>
+        <span class="choice-text">마운드 방문 후 이준영 유지</span>
+        <span class="choice-arrow">›</span>
+        </button>
+        <button class="choice-btn" onclick="showSubChoice('B')">
+        <span class="choice-label">B</span>
+        <span class="choice-text">투수 교체</span>
+        <span class="choice-arrow">›</span>
+        </button>
+        <button class="choice-btn" onclick="showSubChoice('C')">
+        <span class="choice-label">C</span>
+        <span class="choice-text">고의4구 → 김재환 승부</span>
+        <span class="choice-arrow">›</span>
+        </button>
+        <button class="choice-btn" onclick="showSubChoice('D')">
+        <span class="choice-label">D</span>
+        <span class="choice-text">수비 강화</span>
+        <span class="choice-arrow">›</span>
+        </button>
+    </div>
+    
+    <div class="warning">⚠ 일부 정보는 게임 연출용 임의 데이터입니다</div>
+    
+    </div>
+
+    <!-- 페이지 2: 세부 선택 화면 -->
+    <div id="page-subchoice" class="page">
+    
+    <div class="header">
+        <div class="header-title">세부 선택</div>
+        <div class="header-main" id="sub-title">선택지</div>
+    </div>
+    
+    <div id="sub-options" class="choices" style="padding-top:16px"></div>
+    
+    <div class="back-link" onclick="goBack()">← 뒤로</div>
+    
+    </div>
+
+    <!-- 페이지 3: 결과 화면 -->
+    <div id="page-result" class="page">
+    
+    <div class="header">
+        <div class="header-title">DUGOUT · 선택 결과</div>
+        <div class="header-main">🔵 기아 덕아웃</div>
+    </div>
+    
+    <!-- 당신의 선택 -->
+    <div class="result-section">
+        <div class="result-header yours">
+        🔵 당신의 선택
+        </div>
+        <div class="result-body">
+        <div class="selection-tag" id="your-choice">선택 결과</div>
+        <div class="broadcast" id="your-broadcast">중계 텍스트</div>
+        <div class="result-summary" id="your-result">결과</div>
+        <div class="prob-line" id="your-prob">→ 당신의 판단이 옳았을 가능성: 58%</div>
+        <div class="alert-box">
+            ⚠️ 위 결과는 데이터 기반 추정치입니다.<br>
+            실제로 일어난 일이 아니며, 야구의 변수상 다른 결과가 나올 수 있습니다.
+        </div>
+        <div class="score-summary">
+            <span class="score-label">판단 점수</span>
+            <span class="points-badge" id="your-points">72/100</span>
+        </div>
+        </div>
+    </div>
+    
+    <!-- 실제 결과 -->
+    <div class="result-section">
+        <div class="result-header actual">
+        🔴 이범호 감독의 실제 선택
+        </div>
+        <div class="result-body">
+        <div class="selection-tag">[A-1] 포수만 방문 + 이준영 유지</div>
+        <div class="broadcast">
+            "포수 한준수가 마운드로 올라갑니다. 짧은 사인 점검 후 자리로.
+            이준영, 라모스를 그대로 상대합니다.
+            초구 슬라이더 헛스윙! 2구 바깥쪽 직구, 받아쳤습니다!
+            좌중간을 가르는 2루타! 양석환·강승호 모두 홈인! 3-6!"
+        </div>
+        <div class="result-summary">→ 2실점, 3-6 (패색 짙음)</div>
+        <div class="confirmed-box">
+            ✅ 실제 경기 기록 (KBO 공식 박스스코어)
+        </div>
+        <a href="https://www.youtube.com/results?search_query=KIA+%EB%91%90%EC%82%B0+2024+8%EC%9B%9417%EC%9D%BC" target="_blank" class="yt-link">
+            ▶️ 그 순간 영상 보기 (유튜브)
+        </a>
+        </div>
+    </div>
+    
+    <!-- 다른 유저 분포 -->
+    <div class="result-section">
+        <div class="distribution">
+        <div class="dist-title">📊 다른 유저 선택 분포</div>
+        
+        <div class="dist-row">
+            <div class="dist-label">A 방문유지</div>
+            <div class="dist-bar-container">
+            <div class="dist-bar mine" style="width:46%"></div>
+            </div>
+            <div class="dist-pct">46% ★</div>
+        </div>
+        
+        <div class="dist-row">
+            <div class="dist-label">B 투수교체</div>
+            <div class="dist-bar-container">
+            <div class="dist-bar" style="width:36%"></div>
+            </div>
+            <div class="dist-pct">36%</div>
+        </div>
+        
+        <div class="dist-row">
+            <div class="dist-label">C 고의4구</div>
+            <div class="dist-bar-container">
+            <div class="dist-bar" style="width:16%"></div>
+            </div>
+            <div class="dist-pct">16%</div>
+        </div>
+        
+        <div class="dist-row">
+            <div class="dist-label">D 수비강화</div>
+            <div class="dist-bar-container">
+            <div class="dist-bar" style="width:2%"></div>
+            </div>
+            <div class="dist-pct">2%</div>
+        </div>
+        </div>
+    </div>
+    
+    <button class="next-btn" onclick="tryAgain()">🔄 다른 선택 해보기</button>
+    <button class="alt-btn" onclick="switchTeam()">🔴 두산 입장으로 (준비중)</button>
+    <button class="alt-btn" onclick="nextGame()">⚾ 다른 경기 (준비중)</button>
+    
+    </div>
+
+    <!-- script part -->
+    <script src="./js/main.js"></script>
+
+</body>
+</html>
